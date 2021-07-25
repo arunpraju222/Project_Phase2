@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions;
 		monochrome=true,
 		plugin= {"pretty","html:target/cucumber-html","json:target/cucumber.json"},
 		features= "src/test/java/feature",
-		tags= {"@MultipleProductAdd or @SingleProductAdd"},
+		tags= {"@PositiveLogin or @NegativeLogin or @MultipleProductAdd or @SingleProductAdd"},
 		glue= {"stepDefs"}
 		
 		)

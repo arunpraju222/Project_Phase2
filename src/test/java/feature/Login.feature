@@ -1,6 +1,7 @@
 @LoginFeature
 Feature: Login to the page by entering correct Username & Password
 
+@PositiveLogin
   Scenario Outline: Verify that user is able to login
     Given User has launched the Swaglab application
     When User enters username "<UserName>"
@@ -12,6 +13,7 @@ Feature: Login to the page by entering correct Username & Password
       | UserName      | Password     |
       | standard_user | secret_sauce |
 
+@NegativeLogin
   Scenario Outline: User is entering wrong username and password
     Given User has launched the Swaglab application
     When User enters username "<UserName>"
